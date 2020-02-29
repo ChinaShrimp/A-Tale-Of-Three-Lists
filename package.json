@@ -3,9 +3,9 @@
 	"version": "1.1.1",
 	"description": "exploring async patterns with a silly async demo",
 	"dependencies": {
-		"native-promise-only": "latest",
 		"asynquence": "latest",
-		"asynquence-contrib": "latest"
+		"asynquence-contrib": "latest",
+		"native-promise-only": "latest"
 	},
 	"repository": {
 		"type": "git",
@@ -19,11 +19,23 @@
 		"reactive",
 		"observable"
 	],
+	"scripts": {
+		"callback": "live-server callback",
+		"thunk": "live-server thunk",
+		"promise": "live-server promise",
+		"promise-generator": "live-server promise-generator",
+		"asynquence": "live-server asynquence",
+		"reactive-sequence": "live-server reactive-sequence",
+		"csp": "live-server csp"
+	},
 	"bugs": {
 		"url": "https://github.com/getify/a-tale-of-three-lists/issues",
 		"email": "getify@gmail.com"
 	},
 	"homepage": "http://github.com/getify/a-tale-of-three-lists",
 	"author": "Kyle Simpson <getify@gmail.com>",
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"live-server": "^1.2.1"
+	}
 }
